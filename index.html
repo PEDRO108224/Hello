@@ -1,24 +1,111 @@
-<html>
-    <head>
-            <title>Hello</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi</title>
+    <style>
+        body{
+            background-color: beige;
+            display: flex;    
+            flex-direction: column;
+            align-items: center;    
+        }
+        img{
+            width: 25rem;
+            
 
-    </head>
-    <body>
-        <h1 style="color: red;text-decoration: overline;"  >Web FrontEnd!</h1> 
+        }
+        h1{
+            color: brown;
+            font-size: 3rem;
+            font-style: oblique;
 
-      <img  
-      src = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs1secT2mnDxPNGA1Kfw-28EGec4B-3AvZAw&usqp=CAU
-      alt = "Muito Louco"  
-      />  
-       
+        }
+        h2{
+            color: blue;
+            font-size: 1.1;
+            font-style: italic;
+        }
+        p{
+            color: darkred;
+            font-style: italic;
+            font-size: 2rem;
+        }
+        input{ 
+            font-size: 1.4rem;
+            width: 10rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+        button{
+            font-size: 1.2rem;
+            width: 8rem;
+            border-radius: 10px;
+        }
+        #caixa_nome{
+            font-size: 1.1rem;
+            color: brown;
+
+        }
+        #caixa_email{
+            font-size: 1.1rem;
+            color: brown;
+            }
+        #caixa_fone{
+            font-size: 1.1rem;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1> Mente Forte</h1>
+    
+    <img src="https://s.profissionaisti.com.br/wp-content/uploads/2019/01/0-destaque-linguagens-de-programacao-2019.jpg" 
+    alt="MULTI"
+    />
+    <p>Para quem gosta de Desafios</p>
+    <h2>Cadrastre-se para se manter por dentro do que tem de mais novo no mercado!!!!</h2>
+
+    </ul>
+    <input id="caixa_nome" type="text" placeholder="Digite seu Nome"/>
+    <input id="caixa_email" type="text" placeholder="Digite seu Email"/>
+    <input id="caixa_fone" type="text" placeholder="Digite seu Whatsap"/>
+
+    <button id="bt_cadastrar">Cadrastrar</button>
+
+
+
+    <script>
+        const com_botao_cadastar = document.getElementById("bt_cadastrar");
+        const com_caixa_nome = document.getElementById('caixa_nome'); 
+        const com_caixa_email =document.getElementById('caixa_email') ;
+        const com_caixa_fone = document.getElementById('caixa_fone');
          
-        <p> <h1 style="color: blue; text-decoration: overline;"> Minha primeira página html</h1></p>
-        <h1 style="color: red ;text-decoration: lightskyblue;"><p>  MUITO ANIMAL  </p>   </h1> 
+         com_botao_cadastar.onclick =() => {
+             const name = com_caixa_nome.value;
+             const email = com_caixa_email.value;
+             const fone = com_caixa_fone.value;
+             
+             
+             const mensagem = 
+             "Olá " + 
+             name + 
+             " seu email " +
+              email + 
+             " foi cadastrado com sucesso!!";
+             console.log(name,email,fone)
+            alert(mensagem);
+         
+         }
 
-    </body>
+            
+        
 
 
+        
+    </script>
 
+</body>
 </html>
-
-
